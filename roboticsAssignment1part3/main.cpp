@@ -7,9 +7,27 @@
 //
 
 #include <iostream>
+#include <cmath>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    bool primes[100];
+    primes[1] = false;
+    primes[2] = true;
+    int n = 2;
+    
+    for (int x = 3; x <= 100; x++)
+    {
+        while (n <= sqrt(x))
+        {
+            if (x % n == 0)
+            {
+                primes[x] = false;
+            }
+            n += 1;
+        }
+        primes[x] = true;
+    }
     return 0;
 }
