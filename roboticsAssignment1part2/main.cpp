@@ -27,24 +27,20 @@ int main()
     {
         answer = a + b;
         cout << a << " + " << b << " = " << answer << endl;
-        return 0;
     }
     else if (simpleOperator == "subtract")
     {
         answer = a - b;
         cout << a << " - " << b << " = " << answer << endl;
-        return 0;
     }
     else if (simpleOperator == "multiply")
     {
         answer = a*b;
         cout << a << " x " << b << " = " << answer << endl;
-        return 0;
     }
     else if (simpleOperator == "divide")
     {
         answer = a/b;
         cout << a << " / " << b << " = " << answer << endl;
-        return 0;
     }
 }
